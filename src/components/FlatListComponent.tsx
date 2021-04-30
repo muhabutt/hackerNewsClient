@@ -25,7 +25,7 @@ type Props = {
 
 /**
  * FlatList Component which is a pure component, and only render again when props or state
- * changes. This is way our Flat list will optimized.
+ * changes. through pure component we can optimize the react native Flat list.
  */
 
 class FlatListComponent extends React.PureComponent<Props, State> {
