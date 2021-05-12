@@ -40,3 +40,14 @@ export type Data = {
 export type CommentNavigatorParamsList = {
   Comment: {story: Story};
 };
+
+export type BestStoriesState = {
+  ids: Array<number>;
+};
+export type BestStoriesAction = {
+  bestStories: BestStoriesState;
+  type: string;
+};
+export type BestStoriesDispatchType = (
+  args: BestStoriesAction,
+) => BestStoriesAction;
